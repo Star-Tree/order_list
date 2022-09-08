@@ -1,19 +1,5 @@
-# order_list
+# Side Project
+  * ## order list
+    ### [Prototype(Demo)](https://star-tree.github.io/order_list/)
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+  * 目的: 此專案為實作一個病患醫囑清單系統
