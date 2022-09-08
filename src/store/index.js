@@ -1,19 +1,32 @@
 import { createStore } from 'vuex'
+import { dataPatients } from "@/api/index.js";
 
 export default createStore({
-  state: {
-    
-  },
+    state: {
+        patientsArr: [],
+    },
 
-  mutations: {
+    actions: {
+        handAllPatientsInit({commit}) {
+            commit("allPatientsInit", dataPatients);
+        },
 
-  },
+        handPatientMessageInit({commit}, {patientMessage, id}) {
+            commit("patientMessageInit", patientMessage, id);
+        },
+    },
 
-  actions: {
+    mutations: {
+        allPatientsInit(state, dataPatients) {
+            state.patientsArr = dataPatients;
+        },
 
-  },
+        patientMessageInit(state, {patientMessage, id}) {
+            state.patientsArr[id].patientMessage = patientMessage;
+        },
+    },
 
-  getters: {
-
-  }
+    getters: {
+        patientsArr: (state) => state.patientsArr,
+    }
 })
