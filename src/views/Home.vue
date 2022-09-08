@@ -32,7 +32,7 @@
 
         <li class="patient_list">
             <div class="patient_list_id">5</div>
-            <div class="patient_list_name">多拉a夢</div>
+            <div class="patient_list_name">哆啦A夢</div>
         </li>
     </ul>
 </template>
@@ -62,7 +62,7 @@
         height: auto;
         margin: 0 auto;
         padding: 2%;
-        background-color: rgb(11, 241, 214);
+        background-color: #00b4bc;
         border-radius: 5px;
 
         .patient_list {  // li
@@ -72,7 +72,8 @@
             justify-content: space-between;
             align-items: center;
             padding: 0 5%;
-            background-color: white;
+            color: #00b4bc;
+            background-color: #cdf2f4;
             border-radius: 5px;
 
             & + li {
@@ -81,8 +82,9 @@
 
             &:hover {
                 cursor: pointer;
-                background-color:rgb(173, 248, 239);
-                border: 1px solid grey;
+                color: #ffffff;
+                background-color:#69ced2;
+                // border: 1px solid grey;
             }
         }
     }
